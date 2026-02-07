@@ -1,17 +1,17 @@
-const expandBtns = document.querySelectorAll('.expand-btn');
+const search = document.getElementById('search');
+const cards = document.querySelectorAll('.card');
 
-expandBtns.forEach(btn => {
-  btn.addEventListener('click', (e) => {
-    // Stop the link from triggering
-    e.preventDefault();
-    e.stopPropagation();
+search.addEventListener('input', (e) => {
+  const query = e.target.value.toLowerCase();
+  
+  cards.forEach(card => {
+    const name = card.dataset.name;
+    const game = card.dataset.game;
     
-    const card = btn.closest('.card-info');
-    card.classList.toggle('translate-y-[60%]');
-    card.classList.toggle('translate-y-0');
-    
-    // Rotate arrow
-    const arrow = btn.querySelector('svg');
-    arrow.classList.toggle('rotate-180');
+    if (name.includes(query) || game.includes(query)) {
+      card.style.display = 'flex';
+    } else {
+      card.style.display = 'none';
+    }
   });
 });
