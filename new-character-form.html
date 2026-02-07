@@ -6,9 +6,8 @@
   <link href="src/output.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-cover bg-center bg-no-repeat min-h-screen" style="background-image: url('images/gem2.png')">
+<body class="bg-cover bg-center bg-no-repeat bg-fixed min-h-screen" style="background-image: url('images/gem2.png')">
   
-  <!-- Same Navbar -->
  <nav class="bg-white/10 backdrop-blur-md border-b-2 border-white/20 text-gray-100 p-2 relative">
     <div class="flex justify-between items-center px-8 p-1">
       <div class="flex-1">
@@ -38,18 +37,15 @@
       </div>
     </div>
   </nav>
-  <!-- Form Container -->
   <div class="flex justify-center items-center min-h-[90vh] p-4">
     <div class="bg-white/10 bg-gradient-to-t from-black to-black/10 backdrop-blur-xl border-2 border-cyan-400/50 rounded-2xl p-8 w-full max-w-2xl shadow-[0_0_20px_rgba(34,211,238,0.2)]">
       
-      <!-- Form Title -->
       <h1 class="text-3xl md:text-4xl font-bold text-yellow-400 mb-6 tracking-wider" style="font-family: 'Orbitron', sans-serif;">
         // ADD NEW CHARACTER
       </h1>
       
       <form class="space-y-6">
         
-        <!-- Name -->
         <div>
           <label class="block text-cyan-400 font-mono mb-2">CHARACTER NAME</label>
           <input 
@@ -60,7 +56,6 @@
           >
         </div>
         
-        <!-- Universe/Game -->
         <div>
           <label class="block text-cyan-400 font-mono mb-2">UNIVERSE / GAME</label>
           <input 
@@ -71,7 +66,6 @@
           >
         </div>
         
-        <!-- Role -->
         <div>
           <label class="block text-cyan-400 font-mono mb-2">ROLE</label>
           <select class="w-full p-3 rounded-lg bg-black/50 border border-white/30 text-white focus:outline-none focus:border-cyan-400 focus:shadow-[0_0_10px_rgba(34,211,238,0.3)] transition-all">
@@ -85,7 +79,6 @@
           </select>
         </div>
         
-        <!-- Image URL -->
         <div>
           <label class="block text-cyan-400 font-mono mb-2">IMAGE URL</label>
           <input 
@@ -96,7 +89,6 @@
           >
         </div>
         
-        <!-- Description -->
         <div>
           <label class="block text-cyan-400 font-mono mb-2">SHORT DESCRIPTION</label>
           <textarea 
@@ -107,7 +99,6 @@
           ></textarea>
         </div>
         
-        <!-- Submit Button -->
         <button 
           type="submit"
           class="w-full p-4 bg-yellow-400/20 border-2 border-yellow-400 text-yellow-400 font-bold rounded-lg hover:bg-yellow-400 hover:text-black transition-all duration-300 hover:shadow-[0_0_20px_rgba(250,204,21,0.5)] tracking-wider"
