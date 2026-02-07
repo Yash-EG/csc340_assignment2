@@ -6,67 +6,86 @@
   <link href="src/output.css" rel="stylesheet">
 </head>
 <body class="bg-cover bg-center bg-no-repeat min-h-screen overflow-hidden" style="background-image: url('images/gem2.png')" >
-  <nav class="bg-white/10 backdrop-blur-md border-b-2 border-white/20 text-gray-100 p-4">
-    <div class="flex justify-between items-center px-8">
-      <div>
+  <nav class="bg-white/10 backdrop-blur-md border-b-2 border-white/20 text-gray-100 p-2 relative">
+    <div class="flex justify-between items-center px-8 p-1">
+      <div class="flex-1">
         Antihero's
       </div>
-      <div class="flex gap-6">
-        <a class="" href="">Home</a>
-        <a class="" href="">Details</a>
-        <a class="" href="">About</a>
-        <a class="" href="">Form</a>
+      <!-- <div class="absolute left-1/2 -translate-x-1/2">
+        <input type="text" id="search" placeholder="Search by name or game... " class="w-2xl p-1 rounded-lg h-10 bg-black/40 backdrop-blur-xl border-2 border-white/30 text-white text-center placeholder-gray-300 focus:outline-none focus:border-white/60 shadow-lg">
+      </div> -->
+          <div class="flex-1 max-w-md mx-8 relative">
+      <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+      </svg>
+      <input 
+        type="text" 
+        id="search" 
+        placeholder="Search by name or game..." 
+        class="w-full p-1 pl-10 pr-4 h-10 rounded-full bg-black/30 border border-white/30 text-white text-sm placeholder-gray-400 focus:outline-none focus:border-white/50 focus:shadow-[0_0_10px_rgba(255,255,255,0.15)] transition-all"
+      >
+    </div>
+      <div class="flex gap-6 flex-1 justify-end">
+        <a class="relative hover:text-white hover:scale-105 transition-all before:content-[''] before:absolute before:-bottom-1 before:left-1/2 before:-translate-x-1/2 before:w-1 before:h-1 before:bg-white before:rounded-full before:opacity-0 hover:before:opacity-100 before:transition-opacity" href="">Home</a>
+        <a class="relative hover:text-white hover:scale-105 transition-all before:content-[''] before:absolute before:-bottom-1 before:left-1/2 before:-translate-x-1/2 before:w-1 before:h-1 before:bg-white before:rounded-full before:opacity-0 hover:before:opacity-100 before:transition-opacity" href="">Details</a>
+        <a class="relative hover:text-white hover:scale-105 transition-all before:content-[''] before:absolute before:-bottom-1 before:left-1/2 before:-translate-x-1/2 before:w-1 before:h-1 before:bg-white before:rounded-full before:opacity-0 hover:before:opacity-100 before:transition-opacity" href="">About</a>
+        <a class="relative hover:text-white hover:scale-105 transition-all before:content-[''] before:absolute before:-bottom-1 before:left-1/2 before:-translate-x-1/2 before:w-1 before:h-1 before:bg-white before:rounded-full before:opacity-0 hover:before:opacity-100 before:transition-opacity" href="">Form</a>
       </div>
     </div>
   </nav>
   <div class="flex justify-between items-center p-4 bg-cover min-h-[96vh]">
     <div class="grid grid-cols-5 min-w-cover p-2 gap-4">
-      <div class="bg-white/10 backdrop-blur-md border-b-2 border-white/20 text-gray-100 relative p-4 min-h-[80vh] overflow-hidden rounded-2xl flex flex-col">
+      <div class="bg-white/10 backdrop-blur-md border-b-2 border-white/20 text-gray-100 relative p-4 min-h-[80vh] overflow-hidden rounded-2xl flex flex-col hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] transition-all duration-300">
         <img src="images/johnny.jpg" alt="Character" class="h-full w-full object-cover rounded-2xl grow">
-        <div class="p-4 absolute bottom-4 left-4 right-4 rounded-b-2xl bg-gradient-to-t from-black/80 to-transparent">
-          <h3 class="text-xl font-bold">Character Name</h3>
-          <p class="text-gray-600">Universe: Marvel</p>
-          <p class="text-gray-600">Role: Hero</p>
-          <a href="details.html" class="text-blue-500 hover:underline">View Details</a>
+        <div class="p-4 absolute bottom-4 left-4 right-4 rounded-2xl bg-gradient-to-t from-black to-transparent hover:bg-black/60 ">
+          <h3 class="text-4xl font-bold">Johnny Silverhand</h3>
+          <p class="text-gray-300 text-xl hover:text-white">Game: Cyberpunk 2077</p>
+          <p class="text-gray-400 text-xl hover:text-white">Role: Antihero</p>
+          <p class="text-gray-500 text-xl hover:text-white">A rebellious rockerboy and terrorist from Night City's past. Driven by rage against corporate tyranny, Johnny led a doomed assault on Arasaka Tower.</p>
+          <a href="details.html" class="text-blue-500 text-lg  hover:underline">View Details</a>
         </div>        
       </div>
-      <div class="bg-white/10 backdrop-blur-md border-b-2 border-white/20 text-gray-100 p-4 overflow-hidden rounded-2xl flex flex-col">
+      <div class="bg-white/10 backdrop-blur-md border-b-2 border-white/20 text-gray-100 p-4 overflow-hidden rounded-2xl flex flex-col hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] transition-all duration-300">
         <img src="images/joel.jpg" alt="Character" class="h-full w-full object-cover rounded-2xl grow">
-        <div class="p-4 absolute bottom-4 left-4 right-4 rounded-b-2xl bg-gradient-to-t from-black/80 to-transparent">
-          <h3 class="text-xl font-bold">Character Name</h3>
-          <p class="text-gray-600">Universe: Marvel</p>
-          <p class="text-gray-600">Role: Hero</p>
-          <a href="details.html" class="text-blue-500 hover:underline">View Details</a>
+        <div class="p-4 absolute bottom-4 left-4 right-4 rounded-2xl bg-gradient-to-t from-black to-transparent hover:bg-black/60 ">
+          <h3 class="text-4xl font-bold">Joel Miller</h3>
+          <p class="text-gray-300 text-xl hover:text-white">Game: The Last of Us</p>
+          <p class="text-gray-400 text-xl hover:text-white">Role: Antihero</p>
+          <p class="text-gray-500 text-xl hover:text-white">A hardened survivor in a post-apocalyptic world ravaged by infection. He'll do whatever it takes to protect those he cares about—even if it means damning humanity itself.</p>
+          <a href="details.html" class="text-blue-500 text-lg  hover:underline">View Details</a>
         </div>        
       </div>
 
-      <div class="bg-white/10 backdrop-blur-md border-b-2 border-white/20 text-gray-100 p-4 overflow-hidden rounded-2xl flex flex-col">
+      <div class="bg-white/10 backdrop-blur-md border-b-2 border-white/20 text-gray-100 p-4 overflow-hidden rounded-2xl flex flex-col hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] transition-all duration-300">
         <img src="images/aurthermorgan.jpeg" alt="Character" class="h-full w-full  object-cover rounded-2xl grow">
-        <div class="p-4 absolute bottom-4 left-4 right-4 rounded-b-2xl bg-gradient-to-t from-black/80 to-transparent">
-          <h3 class="text-xl font-bold">Character Name</h3>
-          <p class="text-gray-600">Universe: Marvel</p>
-          <p class="text-gray-600">Role: Hero</p>
-          <a href="details.html" class="text-blue-500 hover:underline">View Details</a>
+        <div class="p-4 absolute bottom-4 left-4 right-4 rounded-2xl bg-gradient-to-t from-black to-transparent hover:bg-black/60 ">
+          <h3 class="text-4xl font-bold">Aurther Morgan</h3>
+          <p class="text-gray-300 text-xl hover:text-white">Game: Red Dead Redemption 2</p>
+          <p class="text-gray-400 text-xl hover:text-white">Role: Antihero</p>
+          <p class="text-gray-500 text-xl hover:text-white">A loyal outlaw in the dying days of the Wild West. Torn between his gang's survival and his own redemption, Arthur walks a violent path seeking meaning.</p>
+          <a href="details.html" class="text-blue-500 text-lg  hover:underline">View Details</a>
         </div>        
       </div>
 
-      <div class="bg-white/10 backdrop-blur-md border-b-2 border-white/20 text-gray-100 p-4 overflow-hidden rounded-2xl flex flex-col">
+      <div class="bg-white/10 backdrop-blur-md border-b-2 border-white/20 text-gray-100 p-4 overflow-hidden rounded-2xl flex flex-col hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] transition-all duration-300">
         <img src="images/witcher.jpg" alt="Character" class="w-full h-full object-cover rounded-2xl grow">
-        <div class="p-4 absolute bottom-4 left-4 right-4 rounded-b-2xl bg-gradient-to-t from-black/80 to-transparent">
-          <h3 class="text-xl font-bold">Character Name</h3>
-          <p class="text-gray-600">Universe: Marvel</p>
-          <p class="text-gray-600">Role: Hero</p>
-          <a href="details.html" class="text-blue-500 hover:underline">View Details</a>
+        <div class="p-4 absolute bottom-4 left-4 right-4 rounded-2xl bg-gradient-to-t from-black to-transparent hover:bg-black/60 ">
+          <h3 class="text-4xl font-bold">Geralt of Rivia</h3>
+          <p class="text-gray-300 text-xl hover:text-white">Game: The Witcher 3</p>
+          <p class="text-gray-400 text-xl hover:text-white">Role: Antihero</p>
+          <p class="text-gray-500 text-xl hover:text-white">A mutant monster hunter navigating a morally gray world. Geralt kills for coin but struggles with the line between monsters and men in a land consumed by war.</p>
+          <a href="details.html" class="text-blue-500 text-lg  hover:underline">View Details</a>
         </div>        
       </div>
 
-      <div class="bg-white/10 backdrop-blur-md border-b-2 border-white/20 text-gray-100 p-4 overflow-hidden rounded-2xl flex flex-col">
+      <div class="bg-white/10 backdrop-blur-md border-b-2 border-white/20 text-gray-100 p-4 overflow-hidden rounded-2xl flex flex-col hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] transition-all duration-300">
         <img src="images/kratos.jpg" alt="Character" class="w-full h-full rounded-2xl object-cover grow">
-        <div class="p-4 absolute bottom-4 left-4 right-4 rounded-b-2xl bg-gradient-to-t from-black/80 to-transparent">
-          <h3 class="text-xl font-bold">Character Name</h3>
-          <p class="text-gray-600">Universe: Marvel</p>
-          <p class="text-gray-600">Role: Hero</p>
-          <a href="details.html" class="text-blue-500 hover:underline">View Details</a>
+        <div class="p-4 absolute bottom-4 left-4 right-4 rounded-2xl bg-gradient-to-t from-black to-transparent hover:bg-black/60 ">
+          <h3 class="text-4xl font-bold">Kratos</h3>
+          <p class="text-gray-300 text-xl hover:text-white">Game: God of War</p>
+          <p class="text-gray-400 text-xl hover:text-white">Role: Antihero</p>
+          <p class="text-gray-500 text-xl hover:text-white">A vengeful Spartan warrior who slaughtered the Greek gods. Now seeking redemption in Norse lands, Kratos battles his violent past while raising his son.</p>
+          <a href="details.html" class="text-blue-500 text-lg  hover:underline">View Details</a>
         </div>        
       </div>
     </div>
