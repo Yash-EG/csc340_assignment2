@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="src/output.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-cover bg-center bg-no-repeat min-h-screen" style="background-image: url('images/gem2.png')">
+  
+  <!-- Same Navbar -->
+ <nav class="bg-white/10 backdrop-blur-md border-b-2 border-white/20 text-gray-100 p-2 relative">
+    <div class="flex justify-between items-center px-8 p-1">
+      <div class="flex-1">
+        <div class="text-2xl tracking-widest text-gray-100" style="font-family: 'Orbitron', sans-serif;">
+          ANTIHERO'S
+        </div>
+      </div>
+      <!-- <div class="absolute left-1/2 -translate-x-1/2">
+        <input type="text" id="search" placeholder="Search by name or game... " class="w-2xl p-1 rounded-lg h-10 bg-black/40 backdrop-blur-xl border-2 border-white/30 text-white text-center placeholder-gray-300 focus:outline-none focus:border-white/60 shadow-lg">
+      </div> -->
+          <div class="flex-1 max-w-md mx-8 relative">
+      <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+      </svg>
+      <input 
+        type="text" 
+        id="search" 
+        placeholder="Search by name or game..." 
+        class="w-full p-1 pl-10 pr-4 h-10 rounded-full bg-black/30 border border-white/30 text-white text-sm placeholder-gray-400 focus:outline-none focus:border-white/50 focus:shadow-[0_0_10px_rgba(255,255,255,0.15)] transition-all"
+      >
+    </div>
+      <div class="flex gap-6 flex-1 justify-end">
+        <a class="relative hover:text-white hover:scale-105 transition-all before:content-[''] before:absolute before:-bottom-1 before:left-1/2 before:-translate-x-1/2 before:w-1 before:h-1 before:bg-white before:rounded-full before:opacity-0 hover:before:opacity-100 before:transition-opacity" href="index.html">Home</a>
+        <a class="relative hover:text-white hover:scale-105 transition-all before:content-[''] before:absolute before:-bottom-1 before:left-1/2 before:-translate-x-1/2 before:w-1 before:h-1 before:bg-white before:rounded-full before:opacity-0 hover:before:opacity-100 before:transition-opacity" href="details.html">Details</a>
+        <a class="relative hover:text-white hover:scale-105 transition-all before:content-[''] before:absolute before:-bottom-1 before:left-1/2 before:-translate-x-1/2 before:w-1 before:h-1 before:bg-white before:rounded-full before:opacity-0 hover:before:opacity-100 before:transition-opacity" href="about.html">About</a>
+        <a class="relative hover:text-white hover:scale-105 transition-all before:content-[''] before:absolute before:-bottom-1 before:left-1/2 before:-translate-x-1/2 before:w-1 before:h-1 before:bg-white before:rounded-full before:opacity-0 hover:before:opacity-100 before:transition-opacity" href="new-character-form.html">Form</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Form Container -->
+  <div class="flex justify-center items-center min-h-[90vh] p-4">
+    <div class="bg-white/10 bg-gradient-to-t from-black to-black/10 backdrop-blur-xl border-2 border-cyan-400/50 rounded-2xl p-8 w-full max-w-2xl shadow-[0_0_20px_rgba(34,211,238,0.2)]">
+      
+      <!-- Form Title -->
+      <h1 class="text-3xl md:text-4xl font-bold text-yellow-400 mb-6 tracking-wider" style="font-family: 'Orbitron', sans-serif;">
+        // ADD NEW CHARACTER
+      </h1>
+      
+      <form class="space-y-6">
+        
+        <!-- Name -->
+        <div>
+          <label class="block text-cyan-400 font-mono mb-2">CHARACTER NAME</label>
+          <input 
+            type="text" 
+            placeholder="e.g. Johnny Silverhand"
+            class="w-full p-3 rounded-lg bg-black/50 border border-white/30 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400 focus:shadow-[0_0_10px_rgba(34,211,238,0.3)] transition-all"
+            required
+          >
+        </div>
+        
+        <!-- Universe/Game -->
+        <div>
+          <label class="block text-cyan-400 font-mono mb-2">UNIVERSE / GAME</label>
+          <input 
+            type="text" 
+            placeholder="e.g. Cyberpunk 2077"
+            class="w-full p-3 rounded-lg bg-black/50 border border-white/30 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400 focus:shadow-[0_0_10px_rgba(34,211,238,0.3)] transition-all"
+            required
+          >
+        </div>
+        
+        <!-- Role -->
+        <div>
+          <label class="block text-cyan-400 font-mono mb-2">ROLE</label>
+          <select class="w-full p-3 rounded-lg bg-black/50 border border-white/30 text-white focus:outline-none focus:border-cyan-400 focus:shadow-[0_0_10px_rgba(34,211,238,0.3)] transition-all">
+            <option value="" class="bg-gray-900">Select a role...</option>
+            <option value="antihero" class="bg-gray-900">Antihero</option>
+            <option value="villain" class="bg-gray-900">Villain</option>
+            <option value="survivor" class="bg-gray-900">Survivor</option>
+            <option value="warrior" class="bg-gray-900">Warrior</option>
+            <option value="outlaw" class="bg-gray-900">Outlaw</option>
+            <option value="other" class="bg-gray-900">Other</option>
+          </select>
+        </div>
+        
+        <!-- Image URL -->
+        <div>
+          <label class="block text-cyan-400 font-mono mb-2">IMAGE URL</label>
+          <input 
+            type="url" 
+            placeholder="https://example.com/image.jpg"
+            class="w-full p-3 rounded-lg bg-black/50 border border-white/30 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400 focus:shadow-[0_0_10px_rgba(34,211,238,0.3)] transition-all"
+            required
+          >
+        </div>
+        
+        <!-- Description -->
+        <div>
+          <label class="block text-cyan-400 font-mono mb-2">SHORT DESCRIPTION</label>
+          <textarea 
+            rows="4"
+            placeholder="Write a brief backstory or description..."
+            class="w-full p-3 rounded-lg bg-black/50 border border-white/30 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400 focus:shadow-[0_0_10px_rgba(34,211,238,0.3)] transition-all resize-none"
+            required
+          ></textarea>
+        </div>
+        
+        <!-- Submit Button -->
+        <button 
+          type="submit"
+          class="w-full p-4 bg-yellow-400/20 border-2 border-yellow-400 text-yellow-400 font-bold rounded-lg hover:bg-yellow-400 hover:text-black transition-all duration-300 hover:shadow-[0_0_20px_rgba(250,204,21,0.5)] tracking-wider"
+          style="font-family: 'Orbitron', sans-serif;"
+        >
+          SUBMIT CHARACTER
+        </button>
+        
+      </form>
+      
+    </div>
+  </div>
+
+</body>
+</html>

@@ -9,9 +9,12 @@ search.addEventListener('input', (e) => {
     const game = card.dataset.game;
     
     if (name.includes(query) || game.includes(query)) {
-      card.style.display = 'flex';
-    } else {
-      card.style.display = 'none';
-    }
+      card.style.visibility = 'visible';
+      card.style.opacity = '1';    
+    } 
+    else {
+      card.style.visibility = 'hidden';
+      card.style.opacity = '0';   
+     }
   });
 });
